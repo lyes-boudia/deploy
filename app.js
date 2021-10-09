@@ -4,9 +4,8 @@ require("dotenv").config()
 
 const app = express()
 
-const publicDirectoryPath = path.join(dirname, "/public")
+const publicDirectoryPath = path.join(__dirname, "/public")
 
-console.log("dirname: ", __dirname)
 console.log("--publicDirectoryPath: ", publicDirectoryPath)
 
 //use index.html page and display it when server starts
